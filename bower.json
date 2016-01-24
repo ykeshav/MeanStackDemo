@@ -1,0 +1,32 @@
+{
+  "name": "mean-start",
+  "description": "sample mean app",
+  "main": "server.js",
+  "authors": [
+    "keshav"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "angular": "latest",
+    "angular-resource": "latest",
+    "angular-cookies": "latest",
+    "angular-mocks": "latest",
+    "angular-route": "latest",
+    "bootstrap": "latest",
+    "angular-bootstrap": "latest",
+    "angular-ui-router": "#master",
+    "angular-ui-select": "latest",
+    "angular-sanitize": "latest"
+  }
+}

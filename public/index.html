@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app="jetbrains" ng-controller="appController as app">
+<ul>
+    <li ng-repeat="product in app.products">
+        {{product.name}}
+    </li>
+</ul>
+</body>
+</html>
