@@ -13,7 +13,9 @@
         <button ng-click="app.deleteProduct(product._id)">Delete Product</button>
     </li>
 </ul>
-<input type="text" ng-model="app.newProduct"/>
-<button ng-click="app.saveProduct(app.newProduct)">Save Product</button>
+<input type="text" ng-model="app.newProduct" required/>
+<input type="button" ng-disabled="!app.newProduct.length"
+       ng-click="app.saveProduct(app.newProduct)" value="Save Product"/>
+<br/><span ng-show="!app.newProduct.length">Please enter something!</span>
 </body>
 </html>
