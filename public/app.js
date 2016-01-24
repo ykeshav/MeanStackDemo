@@ -14,4 +14,10 @@ jetbrains.controller("appController", function ($http) {
     }
 
     loadProducts();
+
+    app.deleteProduct = function (id) {
+        $http.delete(url + "/delete?productId=" + id).success(function () {
+            loadProducts();
+        });
+    };
 });

@@ -28,9 +28,16 @@ app.get("/", function (req, res) {
 });
 
 app.post("/add", function (req, res) {
-    var name = req.body.name;
-    var product = new Product({name: name});
+    var productName = req.body.name;
+    var product = new Product({name: productName});
     product.save(function (err) {
+        res.send();
+    })
+});
+app.delete("/delete", function (req, res) {
+    var productId = req.query.productId;
+    var product = new Product({_id: productId});
+    Product.remove(product, function (err) {
         res.send();
     })
 });
